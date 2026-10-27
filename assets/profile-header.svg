@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+<title id="title">VD — Threat Intelligence Lead</title><desc id="desc">Turning fragmented signals into actionable intelligence. OSINT, ransomware research, dark web intelligence and security automation.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101e2d"/><stop offset="1" stop-color="#080e17"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#57e2b5" stop-opacity=".16"/><stop offset="1" stop-color="#57e2b5" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#90b1cb" stroke-opacity=".055"/></pattern>
+</defs>
+<rect width="1280" height="440" rx="24" fill="url(#bg)"/>
+<rect width="1280" height="440" rx="24" fill="url(#grid)"/>
+<ellipse cx="1080" cy="215" rx="300" ry="270" fill="url(#glow)"/>
+<path d="M48 38H1232" stroke="#28404b"/>
+<circle cx="52" cy="67" r="4" fill="#62e5b8"/>
+<text x="68" y="72" fill="#9ab3c3" font-family="monospace" font-size="12" letter-spacing="2">LOAK4156 / INTELLIGENCE &amp; ENGINEERING</text>
+<text x="50" y="151" fill="#62e5b8" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">VD</text>
+<text x="48" y="215" fill="#f1f6fa" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-2">Threat Intelligence Lead</text>
+<text x="51" y="258" fill="#b3c4d2" font-family="Arial, Helvetica, sans-serif" font-size="21">Turning fragmented signals into actionable intelligence.</text>
+<rect x="50" y="299" width="423" height="35" rx="17" fill="#142d30" stroke="#285147"/>
+<text x="68" y="322" fill="#84e9c5" font-family="monospace" font-size="13">OSINT / RANSOMWARE / DARK WEB / AUTOMATION</text>
+<g transform="translate(1060 211)" fill="none" stroke="#62e5b8">
+<circle r="124" opacity=".12"/><circle r="90" opacity=".2"/><circle r="54" opacity=".3"/>
+<path d="M-145 0H145M0-145V145" opacity=".12"/>
+<path d="M0 0L90-86A124 124 0 0 1 124 0Z" fill="#62e5b8" fill-opacity=".045" stroke-opacity=".15"/>
+<path d="M-65 50L-23-33 52-56 81 35-65 50 18 83 81 35M-23-33L81 35" opacity=".45"/>
+<g fill="#8df5cc" stroke="#193e38" stroke-width="6"><circle cx="-65" cy="50" r="7"/><circle cx="-23" cy="-33" r="8"/><circle cx="52" cy="-56" r="7"/><circle cx="81" cy="35" r="8"/><circle cx="18" cy="83" r="6"/></g>
+</g>
+<path d="M50 373H1230" stroke="#28404b"/>
+<text x="51" y="407" fill="#8ba3b5" font-family="monospace" font-size="12" letter-spacing="1.5">COLLECT → CORRELATE → UNDERSTAND → ACT</text>
+<text x="1228" y="407" text-anchor="end" fill="#8ba3b5" font-family="monospace" font-size="12">HUMAN JUDGMENT. ENGINEERED SCALE.</text>
+</svg>
