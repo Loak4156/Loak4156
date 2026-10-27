@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
-<title id="title">VD — Threat Intelligence Lead</title><desc id="desc">Turning fragmented signals into actionable intelligence. OSINT, ransomware research, dark web intelligence and security automation.</desc>
+<title id="title">VD - Threat Intelligence Lead</title><desc id="desc">Turning fragmented signals into actionable intelligence. OSINT, ransomware research, dark web intelligence and security automation.</desc>
 <defs>
  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101e2d"/><stop offset="1" stop-color="#080e17"/></linearGradient>
  <radialGradient id="glow"><stop stop-color="#57e2b5" stop-opacity=".16"/><stop offset="1" stop-color="#57e2b5" stop-opacity="0"/></radialGradient>
@@ -10,7 +10,7 @@
 <ellipse cx="1080" cy="215" rx="300" ry="270" fill="url(#glow)"/>
 <path d="M48 38H1232" stroke="#28404b"/>
 <circle cx="52" cy="67" r="4" fill="#62e5b8"/>
-<text x="68" y="72" fill="#9ab3c3" font-family="monospace" font-size="12" letter-spacing="2">LOAK4156 / INTELLIGENCE &amp; ENGINEERING</text>
+<text x="68" y="72" fill="#9ab3c3" font-family="monospace" font-size="12" letter-spacing="2">LOAK4156 / THREAT RESEARCH &amp; OPERATIONS</text>
 <text x="50" y="151" fill="#62e5b8" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">VD</text>
 <text x="48" y="215" fill="#f1f6fa" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-2">Threat Intelligence Lead</text>
 <text x="51" y="258" fill="#b3c4d2" font-family="Arial, Helvetica, sans-serif" font-size="21">Turning fragmented signals into actionable intelligence.</text>
@@ -25,5 +25,5 @@
 </g>
 <path d="M50 373H1230" stroke="#28404b"/>
 <text x="51" y="407" fill="#8ba3b5" font-family="monospace" font-size="12" letter-spacing="1.5">COLLECT → CORRELATE → UNDERSTAND → ACT</text>
-<text x="1228" y="407" text-anchor="end" fill="#8ba3b5" font-family="monospace" font-size="12">HUMAN JUDGMENT. ENGINEERED SCALE.</text>
+<text x="1228" y="407" text-anchor="end" fill="#8ba3b5" font-family="monospace" font-size="12">CTI EXPERTISE. LLM-ASSISTED TOOLS.</text>
 </svg>
