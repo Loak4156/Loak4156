@@ -10,7 +10,7 @@
 
 ```text
 Role         Threat Intelligence Lead
-Experience   5+ years in cybersecurity
+Experience   6+ years in cybersecurity
 Focus        Ransomware · OSINT · Dark Web · Data breach analysis
 Sources      Russian-language open & closed intelligence
 Previous     SOC Team Lead — 20-analyst Tier 1 team (2020–2024)
