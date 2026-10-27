@@ -56,32 +56,46 @@ Use LLMs to develop tools around real investigation needs. Define the requiremen
 
 ### 01 / CyberTI
 
-**Threat Intelligence Operations Platform** · `Threat_Intel_Platform` · `Private`
+**Cyber Threat Intelligence & Digital Risk Protection** · `Threat_Intel_Platform` · `Private`
 
-A self-hosted CTI workspace that brings **dark web, ransomware leak sites, data breaches, forums, RSS, and social intelligence** into one operational workflow. It connects collected evidence to monitored assets and helps analysts review and prioritize findings.
+A self-hosted, multi-tenant platform built around the full analyst workflow: **collect external threat signals, connect them to an organization’s assets, investigate the evidence, and deliver relevant alerts**. It combines ongoing monitoring with on-demand investigation across dark web forums, Telegram channels, ransomware activity, breach datasets, and phishing infrastructure.
 
-**Capabilities:** IOC extraction and enrichment · Phishing domain monitoring · Credential exposure analysis · Asset correlation · Explainable risk scoring · Analyst triage
+**How it works**
+
+- **Direct source collection** - collects from configured forums and websites, including sources requiring browser sessions and Tor access. Supports operator-assisted login, persistent sessions, onion mirrors, and keyword searches across forums.
+- **Asset-aware detection** - extracts indicators, reduces duplicate processing, and matches intelligence against monitored domains, brands, email addresses, IPs, and keywords. Alerts include matched evidence and a rule-based score breakdown.
+- **Phishing & brand protection** - combines Certificate Transparency monitoring, phishing feeds, and look-alike domain discovery with DNS, registration, TLS, and web evidence. Supports both continuous monitoring and on-demand squatting investigations.
+- **Breach exposure analysis** - imports and searches locally held breach archives, correlates exposed records with monitored domains and email addresses, and generates exposure alerts.
+- **Investigation & delivery** - gives analysts evidence, source context, and triage states in one workspace, with client-scoped views and alerts delivered through email, Telegram, and webhooks.
+- **Collection operations** - tracks source health, run history, failed jobs, and notification delivery so collection problems can be investigated alongside the intelligence itself.
 
 ```text
-  COLLECT                 CORRELATE                OPERATIONALIZE
-  ───────                 ─────────                ──────────────
-  Dark web & forums  ─┐
-  Ransomware feeds   ─┼──▶ IOC extraction     ───▶ Asset-aware triage
-  Breach signals    ─┤    Deduplication            Analyst review
-  RSS & social      ─┘    Context enrichment       Response
+  COLLECT                    CORRELATE                 INVESTIGATE & DELIVER
+  Forums / Tor / Telegram ─┐
+  Ransomware / RSS        ─┼─▶ Indicators & context ─┬─▶ Evidence & analyst triage
+  Imported breach data   ─┤   Asset matching        ├─▶ Client-scoped workspace
+  CT / phishing feeds    ─┘   Explainable scoring   └─▶ Relevant notifications
 ```
 
-Built around real CTI requirements: reduce repetitive work, preserve useful context, and help analysts move from a signal to a decision.
+**My contribution:** defining CTI requirements, source and investigation workflows, detection priorities, and the analyst experience; guiding development with LLMs and evaluating the platform in practice.
 
 ### 02 / Recon Control Center
 
-**Reconnaissance & exposure analysis** · `recon-control-center` · `Private`
+**External reconnaissance & attack surface investigation** · `recon-control-center` · `Private`
 
-A web dashboard for investigating domains and IP addresses. It brings discovery, infrastructure context, and security checks into one place, with parallel tasks and live progress to reduce repetitive manual work.
+An investigation console that turns a **domain or IP address into a structured picture of its infrastructure, exposed services, and security posture**. Analysts can run selected modules or a broader reconnaissance workflow, with concurrent background tasks, live progress, and dedicated reports for each investigation area.
 
-**Capabilities:** Subdomain and DNS discovery · Infrastructure mapping · Web technology profiling · Service and TLS checks · Email security assessment · Exposure reporting
+**What it investigates**
 
-**My focus:** shaping a practical investigation workflow, selecting useful checks, and making findings easier to interpret.
+- **Domains & infrastructure** - DNS records, subdomains, registration data, reverse-IP relationships, hosting networks, and look-alike domains, with source context and wildcard-aware discovery.
+- **Network routes & attribution** - combines route measurements with ASN, BGP/RPKI, TLS, and reputation evidence. Separates scanner-side and transit networks from destination infrastructure, and provides relationship graphs, route history, and IOC exports.
+- **Web exposure** - profiles technologies, reviews headers, discovers historical URLs and exposed paths, and checks for potential vulnerabilities, exposed configuration, and secrets in JavaScript and public sources.
+- **Service & transport security** - examines open services and TLS configuration, grades findings by available evidence, and flags signs of honeypots or deception that could distort the attack surface picture.
+- **Email & application checks** - reviews SPF, DMARC, and DKIM, supports focused CMS assessments, and includes a dedicated WAF investigation workflow.
+
+The aim is to bring scattered reconnaissance results into an analyst-readable investigation: **what was observed, how strong the evidence is, what remains unknown, and what deserves follow-up**.
+
+**My contribution:** defining reconnaissance workflows, selecting and refining checks, shaping evidence and false-positive handling, and guiding LLM-assisted development around practical analyst needs.
 
 ### 03 / Hydra Fetch
 
