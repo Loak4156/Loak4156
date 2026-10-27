@@ -10,7 +10,7 @@
 <p align="center">
   <a href="#about">About</a> &nbsp; / &nbsp;
   <a href="#focus">Focus</a> &nbsp; / &nbsp;
-  <a href="#cyberti">CyberTI</a> &nbsp; / &nbsp;
+  <a href="#selected-projects">Projects</a> &nbsp; / &nbsp;
   <a href="#toolkit">Toolkit</a> &nbsp; / &nbsp;
   <a href="#credentials">Credentials</a> &nbsp; / &nbsp;
   <a href="https://www.linkedin.com/in/kononow/">LinkedIn</a>
@@ -50,11 +50,17 @@ Use LLMs to develop tools around real investigation needs. Define the requiremen
 - **Exposure & breach analysis** - connect discovered data to affected assets and operational priorities.
 - **LLM-assisted tooling** - translate CTI requirements into tools for collection, IOC extraction, deduplication, and alert triage.
 
-## CyberTI
+## Selected projects
 
-### Threat Intelligence Operations Platform
+<sub>Private repositories. I define the requirements and workflows, guide development with LLMs, and evaluate the results in practice.</sub>
 
-My current focus: designing and guiding the development of a CTI platform with LLM assistance that brings **dark web, ransomware leak sites, data breaches, forums, RSS, and social intelligence** into one operational workflow.
+### 01 / CyberTI
+
+**Threat Intelligence Operations Platform** · `Threat_Intel_Platform` · `Private`
+
+A self-hosted CTI workspace that brings **dark web, ransomware leak sites, data breaches, forums, RSS, and social intelligence** into one operational workflow. It connects collected evidence to monitored assets and helps analysts review and prioritize findings.
+
+**Capabilities:** IOC extraction and enrichment · Phishing domain monitoring · Credential exposure analysis · Asset correlation · Explainable risk scoring · Analyst triage
 
 ```text
   COLLECT                 CORRELATE                OPERATIONALIZE
@@ -67,7 +73,25 @@ My current focus: designing and guiding the development of a CTI platform with L
 
 Built around real CTI requirements: reduce repetitive work, preserve useful context, and help analysts move from a signal to a decision.
 
-<sub>CyberTI is highlighted here as ongoing work; its source code is not publicly linked.</sub>
+### 02 / Recon Control Center
+
+**Reconnaissance & exposure analysis** · `recon-control-center` · `Private`
+
+A web dashboard for investigating domains and IP addresses. It brings discovery, infrastructure context, and security checks into one place, with parallel tasks and live progress to reduce repetitive manual work.
+
+**Capabilities:** Subdomain and DNS discovery · Infrastructure mapping · Web technology profiling · Service and TLS checks · Email security assessment · Exposure reporting
+
+**My focus:** shaping a practical investigation workflow, selecting useful checks, and making findings easier to interpret.
+
+### 03 / Hydra Fetch
+
+**Local download management** · `Hydra_Fetch` · `Private`
+
+A local application for managing file downloads through a web interface. It supports persistent queues, parallel transfers when the source allows them, pause and resume, and file integrity checks.
+
+**Capabilities:** Batch downloads · Adaptive transfer handling · Progress tracking · Recovery of interrupted downloads · Local session storage
+
+**My focus:** defining reliable download behavior, clear controls, and practical validation against real usage scenarios.
 
 ## Toolkit
 
