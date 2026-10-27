@@ -85,13 +85,21 @@ A web dashboard for investigating domains and IP addresses. It brings discovery,
 
 ### 03 / Hydra Fetch
 
-**Local download management** · `Hydra_Fetch` · `Private`
+**Multi-head Tor downloader** · `Hydra_Fetch` · `Private`
 
-A local application for managing file downloads through a web interface. It supports persistent queues, parallel transfers when the source allows them, pause and resume, and file integrity checks.
+A purpose-built downloader for retrieving files from **Tor and onion services**, where slow routes, interrupted connections, and large archives make ordinary downloads difficult. It manages a configurable pool of Tor heads and coordinates multiple transfer streams through one local web interface.
 
-**Capabilities:** Batch downloads · Adaptive transfer handling · Progress tracking · Recovery of interrupted downloads · Local session storage
+**How it works**
 
-**My focus:** defining reliable download behavior, clear controls, and practical validation against real usage scenarios.
+- **Multi-head transfers** - distributes file segments across available Tor heads, downloading them concurrently when the source supports verified byte ranges.
+- **Adaptive download modes** - tests the source before choosing parallel segments or a single stream. An optional race mode compares live streams, keeps the fastest, and stops redundant transfers within a traffic budget.
+- **Validated assembly & resume** - checks file-version identifiers, byte ranges, and segment lengths before assembly. Preserves partial data after interruptions and resumes when the source confirms it is safe.
+- **Access & session handling** - handles supported verification pages and allows user-assisted sign-in for protected downloads, with sessions kept locally.
+- **Collection workflow** - combines batch queues, file discovery, multipart archive selection, live progress, and SHA-256 fingerprinting.
+
+Designed to make collection over Tor more reliable and use available connections effectively. Actual throughput depends on Tor routes and the source service’s capacity.
+
+**My contribution:** defining the collection requirements and multi-head workflow, guiding implementation with LLMs, and validating behavior in practical download scenarios.
 
 ## Toolkit
 
